@@ -1,0 +1,181 @@
+/* src/pages/WriteReviewPage.css */
+
+/* Main container with sidebar spacing */
+.writereview-page-container {
+  margin-left: 280px;
+  min-height: 100vh;
+  padding: 30px 0;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ffc107 100%);
+  display: flex;
+  align-items: center;
+  transition: margin-left 0.3s ease;
+}
+
+.writereview-page-container .container {
+  max-width: 800px;
+}
+
+/* Glass Card Effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Header Styling */
+.glass-card h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #ff6b35 0%, #ffc107 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Form Labels */
+.glass-card .form-label {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Form Controls */
+.glass-card .form-control,
+.glass-card .form-select {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.glass-card .form-control:focus,
+.glass-card .form-select:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
+  outline: none;
+}
+
+.glass-card textarea.form-control {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Buttons */
+.btn-save {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-save:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  background: linear-gradient(135deg, #f7931e 0%, #ffc107 100%);
+}
+
+.btn-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-cancel {
+  background: white;
+  border: 2px solid #6c757d;
+  color: #6c757d;
+  padding: 12px 32px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-cancel:hover:not(:disabled) {
+  background: #6c757d;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Text Muted */
+.glass-card .text-muted {
+  color: #666 !important;
+}
+
+.glass-card .text-muted strong {
+  color: #ff6b35;
+}
+
+/* Small Text */
+.glass-card small {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+/* Loading Spinner */
+.writereview-page-container .spinner-border {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .writereview-page-container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .writereview-page-container {
+    padding: 20px 0;
+  }
+
+  .glass-card {
+    padding: 30px 25px;
+    border-radius: 15px;
+  }
+
+  .glass-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .btn-save,
+  .btn-cancel {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .writereview-page-container {
+    padding: 15px;
+  }
+
+  .glass-card {
+    padding: 25px 20px;
+  }
+
+  .glass-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .btn-save,
+  .btn-cancel {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .d-flex.gap-2 {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+}

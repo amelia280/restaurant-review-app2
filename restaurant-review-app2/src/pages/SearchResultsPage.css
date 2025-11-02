@@ -1,0 +1,195 @@
+/* src/pages/SearchResultsPage.css */
+
+/* Main container with sidebar spacing */
+.search-results-container {
+  margin-left: 280px;
+  min-height: 100vh;
+  padding: 20px 0;
+  background: #fafafa;
+  transition: margin-left 0.3s ease;
+}
+
+/* Header styling */
+.search-results-container h2 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ff6b35 0%, #ffc107 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Back button */
+.search-results-container .btn-outline-secondary {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.search-results-container .btn-outline-secondary:hover {
+  transform: translateX(-5px);
+  background: #6c757d;
+  color: white;
+}
+
+/* Card styling */
+.search-results-container .card {
+  border: 2px solid #f0f0f0;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.search-results-container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  border-color: #ff6b35;
+}
+
+.search-results-container .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #ff6b35 0%, #f7931e 50%, #ffc107 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.search-results-container .card:hover::before {
+  transform: scaleX(1);
+}
+
+.search-results-container .card-body {
+  padding: 25px;
+  position: relative;
+}
+
+.search-results-container .card-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.search-results-container .card-text {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Info paragraphs */
+.search-results-container p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.search-results-container p strong {
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+/* Primary button */
+.search-results-container .btn-primary {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.search-results-container .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+  background: linear-gradient(135deg, #f7931e 0%, #ffc107 100%);
+}
+
+/* Alert styling */
+.search-results-container .alert-info {
+  border-radius: 15px;
+  border: 2px solid #ff6b35;
+  background: rgba(255, 107, 53, 0.05);
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.search-results-container .alert-danger {
+  border-radius: 15px;
+  border: 2px solid #dc3545;
+  background: rgba(220, 53, 69, 0.05);
+  padding: 20px;
+}
+
+/* Loading spinner */
+.search-results-container .spinner-border {
+  width: 3rem;
+  height: 3rem;
+  color: #ff6b35;
+}
+
+/* Results count */
+.search-results-container .text-muted {
+  color: #666 !important;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Restaurant type badge style */
+.search-results-container .card-body p:first-of-type {
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .search-results-container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-results-container {
+    padding: 15px 0;
+  }
+
+  .search-results-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .search-results-container .card-body {
+    padding: 20px;
+  }
+
+  .search-results-container .card-title {
+    font-size: 1.2rem;
+  }
+
+  .search-results-container .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-results-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .search-results-container .card-body {
+    padding: 15px;
+  }
+
+  .search-results-container .card-title {
+    font-size: 1.1rem;
+  }
+
+  .search-results-container .btn-primary {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,147 @@
+/* src/pages/MyReviewsPage.css */
+
+/* Main container with sidebar spacing */
+.myreviews-page-container {
+  margin-left: 280px;
+  min-height: 100vh;
+  padding: 20px 0;
+  background: #fafafa;
+  transition: margin-left 0.3s ease;
+}
+
+/* Enhanced card styling */
+.myreviews-page-container .card {
+  border: 2px solid #f0f0f0;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.myreviews-page-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #ff6b35;
+}
+
+/* Header styling */
+.myreviews-page-container h2 {
+  color: #333;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff6b35 0%, #ffc107 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Badge styling */
+.myreviews-page-container .badge {
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+/* Button enhancements */
+.myreviews-page-container .btn-outline-primary {
+  border-color: #ff6b35;
+  color: #ff6b35;
+  transition: all 0.3s ease;
+}
+
+.myreviews-page-container .btn-outline-primary:hover {
+  background: #ff6b35;
+  border-color: #ff6b35;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.myreviews-page-container .btn-outline-danger {
+  transition: all 0.3s ease;
+}
+
+.myreviews-page-container .btn-outline-danger:hover {
+  transform: translateY(-2px);
+}
+
+.myreviews-page-container .btn-primary {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.myreviews-page-container .btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+}
+
+/* Alert styling */
+.myreviews-page-container .alert-info {
+  border-radius: 15px;
+  border: 2px solid #ff6b35;
+  background: rgba(255, 107, 53, 0.05);
+}
+
+/* Loading spinner */
+.myreviews-page-container .spinner-border {
+  width: 3rem;
+  height: 3rem;
+  color: #ff6b35;
+}
+
+/* Card title */
+.myreviews-page-container .card-title {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Link styling */
+.myreviews-page-container .text-primary {
+  color: #ff6b35 !important;
+  transition: all 0.3s ease;
+}
+
+.myreviews-page-container .text-primary:hover {
+  color: #f7931e !important;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .myreviews-page-container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .myreviews-page-container {
+    padding: 15px 0;
+  }
+
+  .myreviews-page-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .myreviews-page-container .d-flex.justify-content-between {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .myreviews-page-container .card-body {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .myreviews-page-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .myreviews-page-container .btn-sm {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+
+  .myreviews-page-container .badge {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
