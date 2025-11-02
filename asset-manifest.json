@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/restaurant-review-app2/static/css/main.ea529816.css",
+    "main.js": "/restaurant-review-app2/static/js/main.9eaff083.js",
+    "static/js/453.0637dad2.chunk.js": "/restaurant-review-app2/static/js/453.0637dad2.chunk.js",
+    "index.html": "/restaurant-review-app2/index.html",
+    "main.ea529816.css.map": "/restaurant-review-app2/static/css/main.ea529816.css.map",
+    "main.9eaff083.js.map": "/restaurant-review-app2/static/js/main.9eaff083.js.map",
+    "453.0637dad2.chunk.js.map": "/restaurant-review-app2/static/js/453.0637dad2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea529816.css",
+    "static/js/main.9eaff083.js"
+  ]
+}
